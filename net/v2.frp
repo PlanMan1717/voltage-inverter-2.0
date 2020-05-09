@@ -1,0 +1,50 @@
+.HEA
+.TIM 5/9/2020 3:18:42 PM
+.APP "Eeschema (5.1.5)-3"
+.TYP FULL
+
+.ADD_COM     U1     "LM555"     "Package_SO:SSOP-8_5.25x5.24mm_P1.27mm"
+.ADD_COM     R1     "1.5k"     "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+.ADD_COM     R2     "15k"     "Resistor_SMD:R_1806_4516Metric_Pad1.57x1.80mm_HandSolder"
+.ADD_COM     C2     "100n"     "Capacitor_SMD:C_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+.ADD_COM     C1     "33n"     "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
+.ADD_COM     C3     "100u"     "Capacitor_SMD:CP_Elec_5x5.9"
+.ADD_COM     D1     "_"     "Diode_SMD:D_SOD-123F"
+.ADD_COM     D2     "_"     "Diode_SMD:D_SOD-123F"
+.ADD_COM     C4     "100u"     "Capacitor_SMD:CP_Elec_5x5.9"
+.ADD_COM     D3     "_"     "Diode_SMD:D_SOD-123F"
+
+
+.ADD_TER   D2   1     "GND"
+.TER       C4   2
+            U1   1
+            C1   2
+            C2   2
+
+.ADD_TER   D1   2     "UNREGOUT"
+.TER       C4   1
+            D3   1
+
+.ADD_TER   D1   1     "Net-(C3-Pad2)"
+.TER       D2   2
+            C3   2
+
+.ADD_TER   C1   1     "Net-(C1-Pad1)"
+.TER       R2   2
+            U1   2
+            U1   6
+
+.ADD_TER   U1   7     "Net-(R1-Pad2)"
+.TER       R2   1
+            R1   2
+
+.ADD_TER   U1   8     "VCC"
+.TER       R1   1
+
+.ADD_TER   U1   5     "Net-(C2-Pad1)"
+.TER       C2   1
+
+.ADD_TER   C3   1     "CLOCK"
+.TER       U1   3
+
+.END

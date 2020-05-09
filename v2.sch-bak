@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L timer:LM555 U1
+U 1 1 5EB70858
+P 6950 3500
+F 0 "U1" H 6700 3900 50  0000 L CNN
+F 1 "LM555" H 7000 3150 50  0000 L CNN
+F 2 "Package_SO:SSOP-8_5.25x5.24mm_P1.27mm" H 6950 3500 50  0001 C CNN
+F 3 "" H 6950 3500 50  0001 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5EB711CD
+P 6000 3250
+F 0 "R1" H 6068 3296 50  0000 L CNN
+F 1 "1.5k" H 6068 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6000 3250 50  0001 C CNN
+F 3 "~" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5EB72184
+P 6000 3550
+F 0 "R2" H 6068 3596 50  0000 L CNN
+F 1 "15k" H 6068 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1806_4516Metric_Pad1.57x1.80mm_HandSolder" H 6000 3550 50  0001 C CNN
+F 3 "~" H 6000 3550 50  0001 C CNN
+	1    6000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3350 6000 3400
+Wire Wire Line
+	6550 3300 6350 3300
+Wire Wire Line
+	6000 3400 6550 3400
+Connection ~ 6000 3400
+Wire Wire Line
+	6000 3400 6000 3450
+Wire Wire Line
+	6000 3650 6000 3700
+Wire Wire Line
+	6000 3700 6350 3700
+Wire Wire Line
+	6350 3700 6350 3600
+Wire Wire Line
+	6350 3500 6550 3500
+Wire Wire Line
+	6550 3600 6350 3600
+Connection ~ 6350 3600
+Wire Wire Line
+	6350 3600 6350 3500
+$Comp
+L Device:CP1_Small C2
+U 1 1 5EB74CD9
+P 6450 3850
+F 0 "C2" H 6541 3896 50  0000 L CNN
+F 1 "100n" H 6541 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 6450 3850 50  0001 C CNN
+F 3 "~" H 6450 3850 50  0001 C CNN
+	1    6450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5EB770EF
+P 6000 3850
+F 0 "C1" H 6092 3896 50  0000 L CNN
+F 1 "33n" H 6092 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6000 3850 50  0001 C CNN
+F 3 "~" H 6000 3850 50  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3700 6000 3750
+Connection ~ 6000 3700
+Wire Wire Line
+	6450 3700 6450 3750
+Wire Wire Line
+	6450 3700 6550 3700
+Wire Wire Line
+	6950 3100 6950 3050
+Wire Wire Line
+	6950 3850 6950 4000
+Wire Wire Line
+	6450 3950 6450 4000
+Wire Wire Line
+	6000 3950 6000 4000
+$Comp
+L Device:CP1_Small C3
+U 1 1 5EB78E56
+P 6450 5050
+F 0 "C3" V 6678 5050 50  0000 C CNN
+F 1 "100u" V 6587 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.9" H 6450 5050 50  0001 C CNN
+F 3 "~" H 6450 5050 50  0001 C CNN
+	1    6450 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small_ALT D1
+U 1 1 5EB7D88F
+P 6750 4850
+F 0 "D1" V 6750 4782 50  0000 R CNN
+F 1 " " V 6705 4782 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123F" V 6750 4850 50  0001 C CNN
+F 3 "~" V 6750 4850 50  0001 C CNN
+	1    6750 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small_ALT D2
+U 1 1 5EB7E17A
+P 6750 5250
+F 0 "D2" V 6750 5182 50  0000 R CNN
+F 1 " " V 6705 5182 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123F" V 6750 5250 50  0001 C CNN
+F 3 "~" V 6750 5250 50  0001 C CNN
+	1    6750 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 4750 6750 4700
+Wire Wire Line
+	6750 4700 7050 4700
+Wire Wire Line
+	6750 5350 7050 5350
+$Comp
+L Device:CP1_Small C4
+U 1 1 5EB7FD4D
+P 7050 5000
+F 0 "C4" H 7141 5046 50  0000 L CNN
+F 1 "100u" H 7141 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.9" H 7050 5000 50  0001 C CNN
+F 3 "~" H 7050 5000 50  0001 C CNN
+	1    7050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5100 7050 5350
+Wire Wire Line
+	7050 4900 7050 4700
+Wire Wire Line
+	7050 5350 7050 5400
+Connection ~ 7050 5350
+$Comp
+L power:GND #PWR02
+U 1 1 5EB80F57
+P 6000 4000
+F 0 "#PWR02" H 6000 3750 50  0001 C CNN
+F 1 "GND" H 6005 3827 50  0000 C CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EB81589
+P 6450 4000
+F 0 "#PWR03" H 6450 3750 50  0001 C CNN
+F 1 "GND" H 6455 3827 50  0000 C CNN
+F 2 "" H 6450 4000 50  0001 C CNN
+F 3 "" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EB81957
+P 6950 4000
+F 0 "#PWR05" H 6950 3750 50  0001 C CNN
+F 1 "GND" H 6955 3827 50  0000 C CNN
+F 2 "" H 6950 4000 50  0001 C CNN
+F 3 "" H 6950 4000 50  0001 C CNN
+	1    6950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5EB81C67
+P 7050 5400
+F 0 "#PWR06" H 7050 5150 50  0001 C CNN
+F 1 "GND" H 7055 5227 50  0000 C CNN
+F 2 "" H 7050 5400 50  0001 C CNN
+F 3 "" H 7050 5400 50  0001 C CNN
+	1    7050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5EB825CB
+P 6000 3050
+F 0 "#PWR01" H 6000 2900 50  0001 C CNN
+F 1 "VCC" H 6017 3223 50  0000 C CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5EB82AC3
+P 6950 3050
+F 0 "#PWR04" H 6950 2900 50  0001 C CNN
+F 1 "VCC" H 6967 3223 50  0000 C CNN
+F 2 "" H 6950 3050 50  0001 C CNN
+F 3 "" H 6950 3050 50  0001 C CNN
+	1    6950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small_ALT D3
+U 1 1 5EB836C4
+P 7250 4700
+F 0 "D3" H 7250 4587 50  0000 C CNN
+F 1 " " V 7205 4632 50  0001 R CNN
+F 2 "Diode_SMD:D_SOD-123F" V 7250 4700 50  0001 C CNN
+F 3 "~" V 7250 4700 50  0001 C CNN
+	1    7250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4700 7050 4700
+Connection ~ 7050 4700
+Text GLabel 7350 3300 2    50   Input ~ 0
+CLOCK
+Wire Wire Line
+	6750 4950 6750 5050
+Connection ~ 6750 5050
+Wire Wire Line
+	6750 5050 6750 5150
+Wire Wire Line
+	6550 5050 6750 5050
+Text GLabel 6250 5050 0    50   Output ~ 0
+CLOCK
+Wire Wire Line
+	6250 5050 6350 5050
+Text GLabel 7450 4700 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	7450 4700 7350 4700
+Text GLabel 7200 4500 2    50   Input ~ 0
+UNREGOUT
+Connection ~ 6750 4700
+Wire Wire Line
+	6750 4500 7200 4500
+Wire Wire Line
+	6750 4500 6750 4700
+Text GLabel 6400 2900 2    50   Input ~ 0
+~GEN
+Wire Wire Line
+	6400 2900 6350 2900
+Wire Wire Line
+	6350 2900 6350 3300
+Wire Wire Line
+	6000 3050 6000 3150
+Wire Notes Line
+	7950 4300 5450 4300
+Wire Notes Line
+	5450 4300 5450 2500
+Wire Notes Line
+	5450 2500 7950 2500
+Wire Notes Line
+	7950 2500 7950 4300
+Text Label 5450 2500 0    50   Italic 0
+Timing
+Wire Notes Line
+	5450 5700 7950 5700
+Wire Notes Line
+	7950 5700 7950 4400
+Wire Notes Line
+	5450 4400 7950 4400
+Wire Notes Line
+	5450 4400 5450 5700
+Text Label 5450 4400 0    50   Italic 0
+Inverter
+Text Label 6350 3100 2    50   Italic 0
+Enable
+Text Label 6000 3150 2    50   Italic 0
+5V
+Text Label 7400 3250 0    50   Italic 0
+≈1kHz
+$EndSCHEMATC

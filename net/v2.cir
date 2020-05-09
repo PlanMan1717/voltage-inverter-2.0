@@ -1,0 +1,12 @@
+.title KiCad schematic
+U1 GND Net-_C1-Pad1_ CLOCK NC_01 Net-_C2-Pad1_ Net-_C1-Pad1_ Net-_R1-Pad2_ VCC LM555
+R1 VCC Net-_R1-Pad2_ 1.5k
+R2 Net-_R1-Pad2_ Net-_C1-Pad1_ 15k
+C2 Net-_C2-Pad1_ GND 100n
+C1 Net-_C1-Pad1_ GND 33n
+C3 CLOCK Net-_C3-Pad2_ 100u
+D1 Net-_C3-Pad2_ UNREGOUT  
+D2 GND Net-_C3-Pad2_  
+C4 UNREGOUT GND 100u
+D3 UNREGOUT NC_02  
+.end

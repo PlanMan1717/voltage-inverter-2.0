@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name timer)(type Legacy)(uri ${KIPRJMOD}/timer.lib)(options "")(descr ""))
+)
