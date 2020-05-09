@@ -1,0 +1,11 @@
+This design for a voltage inverter was simulated on CircuitJS. (File included)
+It has never been built physically, and has thus not been tested.
+
+All gerbers, SVGs, board layout files, PDFs, and drill files are MOCKUPS.
+
+I am not responsible for any injury that may arise using the board as-is.
+Some board manufacturers may be unable to build this for various reasons.
+Capacitors and diodes are not neccessarily rated for use here.
+
+The board does not have a fuse built in. During simulation, low output impedance (roughly 39Ω) caused power consumption of more than 3 watts!
+
